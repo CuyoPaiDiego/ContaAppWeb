@@ -1,0 +1,224 @@
+/*PANTALLA DE CREAR CUENTA*/
+.header {
+  background-color: #74022d;
+  height: 120px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+  /* Opcional: para añadir espacio entre las columnas */
+}
+
+.contenedorLogoHeaderIzq {
+  display: flex;
+  justify-content: start;
+}
+
+.contenedorTituloHeader {
+  display: flex;
+  grid-column: 2 / 5;
+
+  justify-content: center;
+}
+
+.contenedorLogoHeaderDer {
+  display: flex;
+  justify-content: flex-end;
+}
+
+
+h1 {
+  text-align: center;
+
+}
+
+.titulo {
+  color: white;
+}
+
+.logo {
+  margin-top: 10px;
+  margin-left: 10px;
+  height: 100px;
+  width: 100px;
+
+}
+
+#root {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  height: 700px;
+  background-color: #fef9d1;
+}
+
+
+.form-container {
+  display: grid;
+  grid-column: 2 / 5;
+  justify-content: center;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  width: 100%;
+  max-width: 500px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  font-family: 'DM Sans';
+  font-size: larger;
+  font-weight: 700;
+}
+
+@media (max-width: 600px) {
+  .form-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 830px) {
+  .header {
+    height: 100px;
+  }
+
+  .logo {
+    padding-top: 2.5px;
+    padding-left: 5px;
+    height: 85px;
+    width: 85px;
+
+  }
+
+  .contenedorTituloHeader {
+    margin-top: 0;
+    font-size: 12px;
+  }
+
+  .titulo{
+    margin-top: 1px;
+  }
+
+
+  .form-container {
+    display: grid;
+    grid-column: 1 / 4;
+    justify-content: center;
+    grid-template-columns: 1fr;
+    
+    width: 100%;
+    
+    font-family: 'DM Sans';
+    font-size: larger;
+    font-weight: 700;
+    margin-left: 30px;
+    margin-right: 10px;
+  }
+
+}
+
+.form-item {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.form-item label {
+  margin-bottom: 5px;
+}
+
+.form-item input {
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid black;
+  background-color: white;
+  font-family: 'DM Sans';
+  width: calc(100% - 22px);
+  /* Ajuste para padding y border */
+}
+
+.form-item input::placeholder {
+  color: #aaa;
+}
+
+.body {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+}
+
+.boton {
+  border-radius: 10px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  color: white;
+  background-color: #74022d;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+/*PANTALLA DE REGISTRO*/
+.form-containerRegistro {
+  display: grid;
+ 
+  justify-content: center;
+  grid-template-columns: 1fr;
+  
+  width: 100%;
+  
+  font-family: 'DM Sans';
+  font-size: larger;
+  font-weight: 700;
+  margin-left: 30px;
+  margin-right: 10px;
+}
+
+.bodyRegistro {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+
+}
+.form-itemRegistro {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.form-itemRegistro input {
+  padding: 10px;
+  border-radius: 10px;
+  align-self: center;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  border: 1px solid black;
+  background-color: white;
+  font-family: 'DM Sans';
+  width: 140px;
+    height: 30px;
+    font-size: 15px;
+  /* Ajuste para padding y border */
+}
+
+.form-item input::placeholder {
+  color: #aaa;
+}
+
+.submit-buttonRegistro{
+  display: flex;
+  justify-content: center;
+  padding-left: 65px;
+  margin-top: 10px;
+}
+
+.botonRegistro {
+  border-radius: 10px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  color: white;
+  background-color: #74022d;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
