@@ -1,6 +1,6 @@
 import { Route, Routes } from "react-router-dom";
 import { RegisterStudentScreen, SendEmailScreen } from "./pages"
-import { Header } from "./components";
+// import { Header } from "./components";
 
 export const App = () => {
 

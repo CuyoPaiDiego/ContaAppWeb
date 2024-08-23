@@ -9,15 +9,15 @@ interface Props {
     icon: string;
 }
 
-export const InputPrimary = ({ placeholder, type, style, onChange, icon }: Props) => {
-    return(
+export const InputPrimary = ({ placeholder, type, style, onChange }: Props) => {
+    return (
         <div>
-            
-            <input 
+
+            <input
                 className="input-container"
-                type={type} 
-                placeholder={placeholder} 
-                style={style} 
+                type={type}
+                placeholder={placeholder}
+                style={style}
                 onChange={e => {
                     e.preventDefault();
                     onChange(e.target.value);
